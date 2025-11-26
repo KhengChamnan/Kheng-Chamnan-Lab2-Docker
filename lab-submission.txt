@@ -1,0 +1,18 @@
+1.Containzer Applicatons
+	In this section I learn how to create a containzer with node:lts-alpine base image how to set working directory inside the containzer within the exisitng repository ,copy my local file into WORKDIR
+Using yarn command to install image specifiy index.js as the start application then host it on my localhost
+2.Update Application
+In This section I learn how to update applications in my source code and rebuild my update images
+And learn that in order to build new cotainer need to stop the old one by removing it since it host on the same port .
+3.Share The application
+In this section I learning how to push my local docker to docker repo and can be share anyone for example we can share it on dockerplay 
+4.Persist the DB
+In this section I learn that data are not persist if we run new container using same image unless we mount it to out volume 
+5.Use Bind Mount
+In this section I learned about bind mounts in Docker which allow me to link a folder on my host machine directly to a folder in the container this is useful for development
+6.Mutiple container
+In this section I learn how to run other container such as mysql and know how to let each container talk to each other by staying in the same network by mount the volume to the mysql our data now are store in mysql
+7.Docker Compose
+in this section I learn how to define all container using compose yaml which is easy instead of typing and run each container and benefit from compose yaml is that when we run stack of application it create a network for us automatically too.
+8. Image Building best practice
+In this section, I learned about caching layers in Docker image building, which decreases the build time because unchanged layers (like dependencies) don’t need to be rebuilt every time I make changes to my code. By copying package.json and yarn.lock first and installing dependencies before copying the rest of the code, I can reuse the cached layers for faster builds
